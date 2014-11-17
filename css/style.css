@@ -44,6 +44,10 @@ header {
 	top: 0px;
 	padding: -5px;
 }
+header a {
+	margin-top: 15px;
+	margin-left: 10px;
+}
 
 #fill {
 	height: 100vh;
@@ -72,13 +76,15 @@ header h2 {
 
 .name {
 	font-weight: lighter;
-	font-family: 'Lobster', cursive;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-weight: lighter;
 }
 
 #meta h2 {
 	font-size: 1.1em;
-	font-family: 'EB Garamond', serif;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
 	margin-left: 10px;
+	font-weight: lighter;
 }
 
 #back {
@@ -98,17 +104,21 @@ header h2 {
 #sub-header {
 	color: white;
 	font-size: 2em;
-	font-family: "Vollkorn", Georgia, serif;
+	font-family: "Lato", sans-serif;
+	font-weight: lighter;
 	font-size: 22px;
-	font-weight: 400;
 	height: 100vh;
 	padding-top: 26vh;
 	margin: auto;
+	text-align: center;
 }
 
 #sub-container {
 	margin-top: 100vh;
-	color: #D3D3D3;
+	padding: 30px;
+	background-color: #f6f6f6;
+	margin-bottom: 10px;
+	color: black;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
@@ -132,6 +142,57 @@ hr {
 }
 
 #janitor {
+	margin-right: 10px;
 	height: 400px;
 	float: left;
+}
+
+#graphic {
+	margin-left: 10px;
+	height: 500px;
+	float: right;
+}
+
+#quote {
+	float: left;
+	height: 200px;
+	margin-right: 20px;
+}
+
+#quotewide {
+	float: left;
+	width: 400px;
+	margin-right: 20px;
+}
+
+figure {
+	height: 370px;
+	float: right;
+	text-align: center;
+	margin: 0px;
+	margin-left: 10px;
+}
+
+figcaption {
+	font-family: "Lato", sans-serif;
+	font-size: .77em;
+}
+
+#person {
+	height: 300px;
+}
+
+.divider {
+	height: 25px;
+}
+
+footer {
+	margin-top: 40px;
+	text-align: center;
+	font-size: .87em;
+	color: #191919;
+}
+
+footer a{
+	color: inherit;
 }
