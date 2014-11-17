@@ -28,7 +28,8 @@
 	<body>
 
 		<header>
-			<div id="back">
+<!-- 			<img id="fill" src="./assets/img/WEB_prime_wet_EDITED.jpg" />
+ -->			<div id="back">
 				<a href="http://graphics.dailybruin.com/prime/fall-2014/" id="prime">&laquo; Daily Bruin <em>prime</em> fall 2014 issue</a>
 			</div>
 			<div id="meta">
@@ -40,15 +41,12 @@
 				</h2>
 			</div>
 		</header>
-		<div id="content">
-			<section id="one">
-				<div id="white-color">
-					<p>Her attempt to take her own life in the February of her second year was not the first.</p>
-					<p>But it was the first time Savannah Badalich realized that she needed to seek out professional help for her depression and suicidal thoughts, which were weighing heavier on her each day as she tried to occupy herself with other things.</p>
-				</div>
-			</section>
-			<section id="two">
-				<div id="main">
+		<div id="container">
+			<div id="sub-header">
+				<p>Her attempt to take her own life in the February of her second year was not the first.</p>
+				<p>But it was the first time Savannah Badalich realized that she needed to seek out professional help for her depression and suicidal thoughts, which were weighing heavier on her each day as she tried to occupy herself with other things.</p>
+			</div>
+				<div id="sub-container">
 					<p>“I tried to make myself so busy that I didn’t think about things. By avoiding things, I just succumbed to my depression," said Badalich, who now serves as the Undergraduate Students Association Council Student Wellness Commissioner and spent the last year heading a campaign to stop sexual violence on college campuses.</p>
 					<p>She said her depression stemmed from her own sexual assault, and that she avoided counseling for months because she didn’t understand the connection between her trauma and her mental state.</p>
 					<p>“When I luckily survived, I realized that I needed help,” she said.</p>
@@ -137,6 +135,29 @@
 			smoothScrolling: true,
 			forceHeight: false
 		});
+
+		window.onscroll = function() {
+			var scroll_position = $(window).scrollTop();
+			var	client_height = $(window).height();
+			var	scroll_ratio = scroll_position / client_height;
+
+			$("header").css('opacity', 1.2 - scroll_ratio);
+			$("#sub-header").css('opacity', 1.5 - scroll_ratio);
+
+			if($("#sub-header").offset().top - scroll_position < 0) {
+				$("#sub-header").css("z-index", "-1");
+				$("#sub-header").css("width", "inherit");
+				$("#sub-header").css("position", "fixed");
+
+				$("#sub-header").css('top', -15 * scroll_ratio);
+			}
+
+			if ($("#sub-header").css('opacity') >= 0.5) {
+				$("#sub-header").css("position", "relative");
+			}
+
+		}
+
 
 	</script>
 <html>

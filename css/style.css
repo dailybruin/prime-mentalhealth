@@ -8,6 +8,7 @@
 
 body {
 	color: black;
+	margin: 0;
 }
 
 .img-bg, .black-bg, .white-bg{
@@ -23,13 +24,13 @@ body {
 	background-size:cover;
 	z-index:-2;
 }
+
 .black-bg{
 	padding-top: 40vh;
 	text-align: center;
 	background: black;
 	z-index:-3;
 }
-
 
 .white-bg{
 	background: white;
@@ -40,6 +41,15 @@ header {
 	position: relative;
 	height:100vh;
 	top: 0px;
+	padding: -5px;
+}
+
+#fill {
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
 
 header img {
@@ -70,7 +80,6 @@ header h2 {
 	margin-left: 10px;
 }
 
-
 #back {
 	height: 20px;
 	background-color: rgb(255, 255, 255, 0.8);
@@ -80,12 +89,24 @@ header h2 {
 	color: white;
 }
 
-#content {
+#container {
 	margin: 0 auto;
 	width: 70vw;
 }
 
-#main {
+#sub-header {
+	color: white;
+	font-size: 2em;
+	font-family: "Vollkorn", Georgia, serif;
+	font-size: 22px;
+	font-weight: 400;
+	height: 100vh;
+	padding-top: 26vh;
+	margin: auto;
+}
+
+#sub-container {
+	margin-top: 100vh;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
@@ -100,16 +121,6 @@ header h2 {
 
 #one {
 	height: 100vh;
-}
-
-#white-color {
-	position: relative;
-	top: 40vh;
-	color: white;
-	font-size: 2em;
-	font-family: "Vollkorn", Georgia, serif;
-	font-size: 22px;
-	font-weight: 400;
 }
 
 hr {
