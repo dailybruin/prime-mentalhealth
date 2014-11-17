@@ -33,7 +33,8 @@ body {
 }
 
 .white-bg{
-	background: white;
+	background: url(../assets/img/mental_health_background.jpg);
+	background-size:cover;
 	z-index:-4;
 }
 
@@ -107,6 +108,7 @@ header h2 {
 
 #sub-container {
 	margin-top: 100vh;
+	color: #D3D3D3;
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
