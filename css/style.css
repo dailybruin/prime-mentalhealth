@@ -45,8 +45,11 @@ header {
 	padding: -5px;
 }
 header a {
-	margin-top: 15px;
-	margin-left: 10px;
+	position: relative;
+	top: 7px;
+	margin-left: 12px;
+	font-family: "Lato", sans-serif;
+	text-decoration: none;
 }
 
 #fill {
@@ -65,7 +68,7 @@ header img {
 	width: 40vw;
 	float: right;
 	margin-top: 5vh;
-	margin-right: 10vw;
+	margin-right: 12vw;
 }
 
 header h2 {
